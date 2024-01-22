@@ -211,7 +211,6 @@ function MenuIcon(props) {
   )
 }
 
-
 function SchoolIcon(props) {
   return (
     <svg

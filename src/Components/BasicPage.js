@@ -1,23 +1,32 @@
 import React from 'react';
+import { divStyle, divSection, paragraphStyle, headerStyle, titleStyle } from './CSS/styles';
 
-// import mainPageData from '../Data/MainPageData';
 
-const divStyle = {
-    minHeight: "100vh",
-    backgroundColor: 'rgb(135, 206, 250)',
-    textAlign: "center",
-}
+
+
 
 const BasicPage = ({mainPageData}) => {
+    var side = 0;
     return (
         <div style={divStyle}>
             {mainPageData.menuItems.map((item) => {
                 return (
                     <section id={item}>
-                        <div style={divStyle}>
-                            <h1>{item}</h1>
-                            <p>{mainPageData[item].content}</p>
-                            <img src={mainPageData[item].image} alt={mainPageData[item].title} />
+                        <h1 style={titleStyle}>{item}</h1>
+                        <div style={divSection}>
+                            {(side++%2 == 0) ?
+                                (
+                                    <>
+                                    <p style={paragraphStyle}>{mainPageData[item].content}</p>
+                                    <img src={mainPageData[item].image} alt={mainPageData[item].title} />
+                                    </>
+                                ):(
+                                    <>
+                                    <img src={mainPageData[item].image} alt={mainPageData[item].title} />
+                                    <p style={paragraphStyle}>{mainPageData[item].content}</p>
+                                    </>
+                                )
+                            }
                         </div>
                     </section>
                 )

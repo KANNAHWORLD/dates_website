@@ -1,25 +1,12 @@
 import React from 'react';
 
-
-const navStyle = {
-    
-    padding: "1.5vh 2vw",
-    margin: "auto auto auto auto",
-    justifyContent: "center",    
-}
-
-const linkStyle = {
-    padding: "0vh 2vw",
-    textDecoration: "none",
-    color: "black",
-    fontSize: "large",
-    fontWeight: "bold",
-}
-
+import { navStyle, linkStyle } from './CSS/styles';
+import mainPageData from '../Data/MainPageData';
 
 const NavBar = ({mainPageData}) => {
     return (
         <nav style={navStyle}>
+            <img height={50} src={mainPageData["Logo"]} alt="DataSC Logo" />
             {mainPageData.menuItems.map((item) => {
                 return (
                     <a
