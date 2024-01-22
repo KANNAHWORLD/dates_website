@@ -9,7 +9,7 @@ const BasicPage = ({mainPageData}) => {
     var side = 0;
     return (
         <div style={divStyle}>
-            {mainPageData.menuItems.map((item) => {
+            {mainPageData.genericSections.map((item) => {
                 return (
                     <section id={item}>
                         <h1 style={titleStyle}>{item}</h1>

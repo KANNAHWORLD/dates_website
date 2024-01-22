@@ -21,7 +21,7 @@ export const linkStyle = {
 export const divStyle = {
     minHeight: "100vh",
     maxWidth: "100vw",
-    padding: "0vh 0vw 5vh 0vw",
+    padding: "0vh 0vw 0vh 0vw",
     backgroundColor: 'rgb(235, 244, 255)',
 }
 
@@ -36,12 +36,18 @@ export const divSection = {
     display: "flex",
     minHeight: "fit-content",
     justifyContent: "center",
+    padding: "0vh 0vw 10vh 0vw",
 }
 
 export const titleStyle = {
     color: "rgb(28, 72, 220)",
     fontSize: "xx-large",
     fontWeight: "bold",
+}
+
+export const subTitleStyle = {
+    color: "rgb(28, 72, 220)",
+    fontSize: "20px",
 }
 
 export const paragraphStyle = {
@@ -70,4 +76,30 @@ export const buttonStyle = {
     textDecoration: "none",
     borderRadius: "10px",
     cursor: "pointer",
+}
+
+export const inverseButtonStyle = {
+    backgroundColor: "white",
+    color: "rgb(28, 72, 220)",
+    padding: "1vh 2vw",
+    margin: "1vh 2vw",
+    fontSize: "large",
+    fontWeight: "bold",
+    fontFamily: "sans-serif",
+    borderRadius: "10px",
+    border: "1px solid rgb(28, 72, 220)",
+    textDecoration: "none",
+    borderRadius: "10px",
+    cursor: "pointer",
+}
+
+export const cardStyle = {
+    borderRadius: "10px",
+    padding: "1vh 3vw",
+    width: "18rem",
+    borderTransparent: "true",
+    minHeight: "fit-content",
+    minWidth: "fit-content",
+    boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
+    margin: "1vh 2vw",
 }
