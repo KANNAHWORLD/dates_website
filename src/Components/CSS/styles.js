@@ -79,15 +79,13 @@ export const buttonStyle = {
 }
 
 export const inverseButtonStyle = {
-    backgroundColor: "white",
+    backgroundColor: "transparent",
     color: "rgb(28, 72, 220)",
     padding: "1vh 2vw",
     margin: "1vh 2vw",
     fontSize: "large",
     fontWeight: "bold",
     fontFamily: "sans-serif",
-    borderRadius: "10px",
-    border: "1px solid rgb(28, 72, 220)",
     textDecoration: "none",
     borderRadius: "10px",
     cursor: "pointer",
@@ -101,5 +99,5 @@ export const cardStyle = {
     minHeight: "fit-content",
     minWidth: "fit-content",
     boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
-    margin: "1vh 2vw",
+    margin: "1vh 3vw",
 }
