@@ -4,7 +4,7 @@ const mainPageData = {
         "About Us",
         "Contact Us"
     ],
-    
+
     "Our Mission": {
         title: "Our Mission",
         content: "DATASC FRAT PARTIES",
