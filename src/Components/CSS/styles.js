@@ -81,7 +81,7 @@ export const buttonStyle = {
 export const inverseButtonStyle = {
     backgroundColor: "transparent",
     color: "rgb(28, 72, 220)",
-    padding: "1vh 2vw",
+    padding: "1vh .5vw",
     margin: "1vh 2vw",
     fontSize: "large",
     fontWeight: "bold",
@@ -89,6 +89,7 @@ export const inverseButtonStyle = {
     textDecoration: "none",
     borderRadius: "10px",
     cursor: "pointer",
+    maxWidth: "fit-content",
 }
 
 export const cardStyle = {
